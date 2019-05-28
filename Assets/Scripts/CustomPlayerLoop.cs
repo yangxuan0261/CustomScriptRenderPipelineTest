@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.LowLevel;
@@ -32,7 +32,7 @@ public class CustomPlayerLoop {
             // PreLateUpdateの中身消します
             if (subSystem.type == typeof(PreLateUpdate) )
             {
-                subSystem.subSystemList = CreateSubSystems(typeof(UnityEngine.Experimental.PlayerLoop.PreLateUpdate.EndGraphicsJobsLate));
+                subSystem.subSystemList = CreateSubSystems(typeof(UnityEngine.Experimental.PlayerLoop.PreLateUpdate.EndGraphicsJobsAfterScriptUpdate));
             }
             // Preupdateも大体削る
             else if (subSystem.type == typeof(PreUpdate))
